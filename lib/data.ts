@@ -28,7 +28,7 @@ export const links = [
     }
   ] as const;
 
-  export const filters = ["art", "design", "tech", "learn"] as const;
+  export const filters = ["art", "design", "tech", "learn"] as string[];
 
   export const projectsData = [
     {
@@ -36,41 +36,41 @@ export const links = [
       displayImage: stemchests,
       hoverImage: stemchests,
       page: "www.stemchests.com",
-      type: ["design", "tech", "learn"],
+      type: ["design", "tech", "learn"] as string[],
     },
     {
       title: "All Of Me, All Of You",
       displayImage: allOfMeAllOfYou,
       hoverImage: allOfMeAllOfYou,
       page: "https://www.youtube.com/watch?v=7Z2KVbWiKxU",
-      type: ["art"],
+      type: ["art"]  as string[],
     },
     {
       title: "Traditional",
       displayImage: traditional,
       hoverImage: council,
       page: "",
-      type: ["art"],
+      type: ["art"]  as string[],
     },
     {
       title: "Digital",
       displayImage: mushroomForest,
       hoverImage: sculptor,
       page: "",
-      type: ["art"],
+      type: ["art"]  as string[],
     },
     {
       title: "Misc. Posters",
       displayImage: hobbesAndSushiDisplay,
       hoverImage: hobbesAndSushiHover,
       page: "",
-      type: ["design"],
+      type: ["design"]  as string[],
     },
     {
       title: "Bluetooth Robotic Arm",
       displayImage: roboticArm,
       hoverImage: roboticArm,
       page: "",
-      type: ["design"],
+      type: ["tech", "learn"]  as string[],
     },
   ] as const;
