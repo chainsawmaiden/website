@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .pf {
+    @apply font-abcfavorit text-basefavorit sm:text-lgfavorit;
+  }
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-Heavy.otf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-LightItalic.otf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-RegularItalic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-MediumItalic.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-BoldItalic.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-HeavyItalic.otf");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcdiatype";
+  src: url("../public/fonts/ABCDiatypeEdu-BlackItalic.otf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Hairline.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Thin.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Book.otf");
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-HairlineItalic.otf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-ThinItalic.otf");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-LightItalic.otf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-BookItalic.otf");
+  font-weight: 350;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-RegularItalic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-MediumItalic.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-BoldItalic.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcsocialextended";
+  src: url("../public/fonts/ABCSocialExtendedEdu-BlackItalic.otf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "abcfavorit";
+  src: url("../public/fonts/ABCFavoritEdu-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcfavorit";
+  src: url("../public/fonts/ABCFavoritEdu-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abcfavorit";
+  src: url("../public/fonts/ABCFavoritEdu-RegularItalic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
