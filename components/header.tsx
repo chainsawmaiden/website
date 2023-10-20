@@ -20,7 +20,7 @@ export default function Header() {
         <Link className='font-abcfavorit font-normal whitespace-nowrap hover:text-primary-400 transition transition-duration-[300ms] leading-[4rem] text-6xl sm:text-8xl sm:leading-[5rem]' href="/" >ADITYA DAS</Link>
 
         <div className="grow flex-col -mt-1 w-min text-base text-center sm:text-lg sm:text-left">
-          <p className='sm:hidden font-abcfavorit font-bold text-basefavorit'>-- BETTER ON DESKTOP. --</p>
+          <p className='sm:hidden font-abcfavorit font-bold text-basefavorit'>-- BETTER ON DESKTOP --</p>
           <p className="sm:min-w-[27rem] max-w-[37rem] font-light font-times leading-snug">
             Master of none, <span className="pf">lover of all</span>. Currently double majoring in <span className="pf">art</span> and <span className="pf">computer science</span> at YALE UNIVERSITY &apos;27. ♡
           </p>

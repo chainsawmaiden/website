@@ -33,16 +33,16 @@ export default function Hero() {
     }
 
     function Filters() {
-        return (<section className={`grid grid-cols-5 items-center -translate-x-1 gap-x-1 pb-3 font-abcfavorit text-basefavorit sm:text-lgfavorit sm:pb-4 min-w-min sm:items-start`}>
+        return (<section className={`grid grid-cols-5 -translate-x-1 gap-x-1 pb-3 font-abcfavorit text-basefavorit sm:text-lgfavorit sm:pb-4 min-w-min sm:items-start`}>
             <p 
                 onClick={() => handleClickAll()}
-                className={`underline cursor-pointer ${myFilters.includes('all') ? 'text-primary-0' : 'text-primary-400'} w-1/4 justify-self-center whitespace-nowrap transition transition-duration-[300ms]'`}
+                className={`underline cursor-pointer ${myFilters.includes('all') ? 'text-primary-0' : 'text-primary-400'} w-min whitespace-nowrap justify-self-center transition transition-duration-[300ms]'`}
             >{myFilters.includes('all') ? 'all ❤︎' : 'all ♡'}</p>
                     
             {filters.map((f, index) => (
                 <p 
                     onClick={() => handleClick(f)}
-                    className={`underline cursor-pointer ${myFilters.includes(f) ? 'text-primary-0' : 'text-primary-400'} w-1/4 justify-self-center whitespace-nowrap transition transition-duration-[300ms]`} 
+                    className={`underline cursor-pointer ${myFilters.includes(f) ? 'text-primary-0' : 'text-primary-400'} w-min whitespace-nowrap justify-self-center transition transition-duration-[300ms]`} 
                     key={index}>{f}</p>
             ))}
         </section>)
@@ -52,25 +52,25 @@ export default function Hero() {
         <>
             <Filters />
 
-            <section className='flex flex-wrap font-normal gap-x-0.5 justify-center sm:justify-start sm:gap-x-2.5'>
+            <section className='flex flex-wrap font-normal gap-x-4 justify-center sm:justify-start sm:gap-x-2.5'>
                 {projectsData.map((project, index) => {
 
                     const content = <>
-                        <p className='group-hover:text-secondary-0 text-[.5rem] text-primary-300 font-normal font-abcdiatype mt-1 sm:mt-0.5 transition duration-300 w-4 sm:w-4'>{`[${index+1 < 9 ? '0' : ''}${(index+1)}]`}</p>
+                        <p className='group-hover:text-secondary-0 text-[.5rem] text-primary-300 font-normal font-abcdiatype mt-1 sm:mt-0.5 transition duration-300 w-4'>{`[${index+1 < 9 ? '0' : ''}${(index+1)}]`}</p>
 
                         <p className='group-hover:text-secondary-0 text-primary-100 mr-1.5 whitespace-nowrap hidden font-times group-odd:font-abcfavorit text-2xl sm:text-5xl group-odd:capitalize group-even:uppercase group-odd:sm:text-5xlfavorit group-odd:italic group-odd:sm:mt-1 sm:inline sm:mr-3 transition duration-300'>{project.title}</p>
 
                         <Image 
                             src={project.displayImage}
                             alt="project image"
-                            className='sm:group-hover:invert-[100%] object-contain w-auto mt-1 mb-0 mr-1.5 sm:mb-2 transition duration-300'
+                            className='sm:group-hover:invert-[100%] object-contain w-4/5 sm:w-auto mt-1 mb-0 mr-1.5 sm:mb-2 transition duration-300'
                         />
                     </>;
                     
                     return (
                         project.page != "" ? 
 
-                            <Link className={`group flex flex-row wrap transition h-40 w-auto ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 hover:bg-primary-100 hover:z-10`}
+                            <Link className={`group flex flex-row transition h-auto w-2/5 ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 sm:w-auto hover:bg-primary-100 hover:z-10`}
                                 onMouseOver= {() => handleMouseOver(project)}
                                 onMouseOut={handleMouseOut}
                                 href={project.page}
@@ -82,7 +82,7 @@ export default function Hero() {
                             
                             : 
 
-                            <div className={`group flex flex-row wrap transition h-40 w-auto cursor-default ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 hover:bg-primary-100 hover:z-10`}
+                            <div className={`group flex flex-row transition h-auto w-2/5 cursor-default ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 sm:w-auto hover:bg-primary-100 hover:z-10`}
                             onMouseOver= {() => handleMouseOver(project)}
                             onMouseOut={handleMouseOut}>
                                 {content}
