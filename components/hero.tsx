@@ -33,7 +33,7 @@ export default function Hero() {
     }
 
     function Filters() {
-        return (<section className={`grid grid-cols-${filters.length+1} items-center -translate-x-1 gap-x-1 pb-3 font-abcfavorit text-basefavorit sm:text-lgfavorit sm:pb-4 min-w-min sm:items-start`}>
+        return (<section className={`grid grid-cols-5 items-center -translate-x-1 gap-x-1 pb-3 font-abcfavorit text-basefavorit sm:text-lgfavorit sm:pb-4 min-w-min sm:items-start`}>
             <p 
                 onClick={() => handleClickAll()}
                 className={`underline cursor-pointer ${myFilters.includes('all') ? 'text-primary-0' : 'text-primary-400'} w-1/4 justify-self-center whitespace-nowrap transition transition-duration-[300ms]'`}

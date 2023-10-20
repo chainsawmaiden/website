@@ -21,13 +21,13 @@ export default function Header() {
 
         <div className="grow flex-col -mt-1 w-min text-base text-center sm:text-lg sm:text-left">
           <p className="min-w-[27rem] max-w-[37rem] font-light font-times leading-snug">
-            master of none, <span className="pf">lover of all</span>. currently double majoring in <span className="pf">art</span> and <span className="pf">computer science</span> at YALE UNIVERSITY '27. ♡
+            master of none, <span className="pf">lover of all</span>. currently double majoring in <span className="pf">art</span> and <span className="pf">computer science</span> at YALE UNIVERSITY &apos;27. ♡
           </p>
           <nav >
             <ul className='flex flex-row justify-center gap-x-1 min-w-min sm:justify-start'>
               {links.map((link, index) => (
-                <li className='flex flex-row gap-x-1 min-w-min sm:justify-start'>
-                  <Link className='underline hover:text-primary-400 transition font-abcfavorit text-basefavorit sm:text-lgfavorit lowercase transition-duration-[300ms] font-normal' key={index} href={link.href} target={link.newTab ? "_blank" : "_self"}>{link.name}</Link>
+                <li key={index} className='flex flex-row gap-x-1 min-w-min sm:justify-start'>
+                  <Link className='underline hover:text-primary-400 transition font-abcfavorit text-basefavorit sm:text-lgfavorit lowercase transition-duration-[300ms] font-normal' href={link.href} target={link.newTab ? "_blank" : "_self"}>{link.name}</Link>
                   <p>{index < links.length ? ' / ' : ''}</p>    
                 </li>
               ))}
