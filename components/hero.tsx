@@ -70,7 +70,7 @@ export default function Hero() {
                     return (
                         project.page != "" ? 
 
-                            <Link className={`group flex flex-row wrap transition h-[11.5rem] min-w-min ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 hover:bg-primary-100 hover:z-10`}
+                            <Link className={`group flex flex-row wrap transition h-40 w-auto ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 hover:bg-primary-100 hover:z-10`}
                                 onMouseOver= {() => handleMouseOver(project)}
                                 onMouseOut={handleMouseOut}
                                 href={project.page}
@@ -82,7 +82,7 @@ export default function Hero() {
                             
                             : 
 
-                            <div className={`group flex flex-row wrap transition h-[11.5rem] min-w-min cursor-default ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 hover:bg-primary-100 hover:z-10`}
+                            <div className={`group flex flex-row wrap transition h-40 w-auto cursor-default ${myFilters.includes('all') || myFilters.some((r:string) => project.type.includes(r)) ? 'visible' : 'invisible'} sm:h-12 hover:bg-primary-100 hover:z-10`}
                             onMouseOver= {() => handleMouseOver(project)}
                             onMouseOut={handleMouseOut}>
                                 {content}
